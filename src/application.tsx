@@ -1,11 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, RouteComponentProps } from 'react-router-dom';
+import Footer from './components/footer';
+import Header from './components/header';
 import routes from './config/routes';
 
 const Application: React.FunctionComponent<{}> = props => {
     return (
-        <div>
+        <div className="app">
             <BrowserRouter>
+                <Header />
                 <Switch>
                     {routes.map((route, index) => {
                         return (
@@ -24,6 +27,7 @@ const Application: React.FunctionComponent<{}> = props => {
                         )
                     })}
                 </Switch>
+                <Footer />
             </BrowserRouter>
         </div>
     );

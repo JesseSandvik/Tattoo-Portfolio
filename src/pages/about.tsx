@@ -18,10 +18,10 @@ const AboutPage: React.FunctionComponent<IPage & RouteComponentProps<any>> = pro
         }
     }, [props])
     return (
-        <div>
+        <main>
             <p>{message}</p>
             <Link to="/">Go To The Home Page!</Link>
-        </div>
+        </main>
     );
 };
 

@@ -1,0 +1,84 @@
+@import './config';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .1rem;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.app {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    width: 100vw;
+
+    header {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        ul {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            text-align: center;
+
+            li {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    main {
+        align-items: flex-start;
+        background-image:
+            linear-gradient(to right,
+            rgba($primary-color, 0.6),
+            rgba($primary-color, 0.8)),
+            url('../images/tattoo-tara.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        grid-column: 1 / -1;
+        grid-row: 2 / 2;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / -1;
+        grid-row: 3 / -1;
+        justify-content: center;
+        text-align: center;
+    }
+}

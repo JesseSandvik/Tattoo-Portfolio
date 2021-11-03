@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import logging from '../config/logging';
 import IPage from '../interface/page';
 
-const HomePage: React.FunctionComponent<IPage> = props => {
+const PortfolioPage: React.FunctionComponent<IPage> = props => {
     useEffect(() => {
         logging.info(`Loading ${props.name}`);
     }, [props])
@@ -13,4 +13,4 @@ const HomePage: React.FunctionComponent<IPage> = props => {
     );
 };
 
-export default HomePage;
+export default PortfolioPage;

@@ -1,6 +1,8 @@
 import IRoute from "../interface/route";
 import AboutPage from "../pages/about";
+import ContactPage from "../pages/contact";
 import HomePage from "../pages/home";
+import PortfolioPage from "../pages/portfolio";
 
 const routes: IRoute[] = [
     {
@@ -10,15 +12,21 @@ const routes: IRoute[] = [
         exact: true,
     },
     {
-        path: '/about/',
+        path: '/about',
         name: 'About Page',
         component: AboutPage,
         exact: true,
     },
     {
-        path: '/about/:number',
-        name: 'About Page',
-        component: AboutPage,
+        path: '/portfolio',
+        name: 'Portfolio Page',
+        component: PortfolioPage,
+        exact: true,
+    },
+    {
+        path: '/contact',
+        name: 'Contact Page',
+        component: ContactPage,
         exact: true,
     },
 ];
