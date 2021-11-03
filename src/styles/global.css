@@ -71,7 +71,18 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 1rem;
   text-align: center;
+}
+
+.app header ul li a:hover {
+  opacity: 0.9;
+}
+
+.app header ul li .link-active {
+  color: #3891a6;
+  font-weight: 600;
+  letter-spacing: .2rem;
 }
 
 .app header ul li i {

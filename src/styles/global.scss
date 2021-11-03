@@ -46,7 +46,20 @@ li {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                margin: 1rem;
                 text-align: center;
+
+                a {
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+
+                .link-active {
+                    color: $accent-color-one;
+                    font-weight: 600;
+                    letter-spacing: .2rem;
+                }
 
                 i {
                     font-size: 1.5rem;
