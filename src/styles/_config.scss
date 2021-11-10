@@ -4,3 +4,11 @@ $muted-color: #D9D2B6;
 $accent-color-one: #3891a6;
 $accent-color-two: #073B4C;
 $accent-color-three: #00FDDC;
+
+@mixin transition-ease {
+    transition: .8s ease-in-out .5s;
+}
+
+@mixin transition-ease-delay-one {
+    transition: all 1.5s ease-in-out 1.5s;    
+}

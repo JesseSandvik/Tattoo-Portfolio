@@ -31,6 +31,151 @@ li {
   width: 100vw;
 }
 
+.app .landing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100vw;
+}
+
+.app .landing.open {
+  position: unset;
+  width: 0;
+  visibility: hidden;
+  -webkit-transition: all 1.5s ease-in-out 1.5s;
+  transition: all 1.5s ease-in-out 1.5s;
+}
+
+.app .landing .left-top {
+  background: #000000;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  height: 50vh;
+  opacity: 0.9;
+  width: 50vw;
+}
+
+.app .landing .left-top.open {
+  -webkit-box-shadow: inset 0 0 0 5px #3891a6;
+          box-shadow: inset 0 0 0 5px #3891a6;
+  height: 0;
+  opacity: 0;
+  -webkit-transform: rotate(-90deg) translate(-100%, -100%);
+          transform: rotate(-90deg) translate(-100%, -100%);
+  visibility: hidden;
+  -webkit-transition: .8s ease-in-out .5s;
+  transition: .8s ease-in-out .5s;
+}
+
+.app .landing .left-bottom {
+  background: #000000;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  height: 50vh;
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  grid-row: 2 / -1;
+  opacity: 0.5;
+  width: 50vw;
+}
+
+.app .landing .left-bottom.open {
+  -webkit-box-shadow: inset 0 0 0 5px #3891a6;
+          box-shadow: inset 0 0 0 5px #3891a6;
+  height: 0;
+  opacity: 0;
+  -webkit-transform: rotate(90deg) translate(-100%, 100%);
+          transform: rotate(90deg) translate(-100%, 100%);
+  visibility: hidden;
+  -webkit-transition: .8s ease-in-out .5s;
+  transition: .8s ease-in-out .5s;
+}
+
+.app .landing i {
+  background: #000000;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: #3891a6;
+  font-size: 3rem;
+  margin: 46vh 47vw;
+  padding: 2rem;
+  position: absolute;
+  -webkit-transition: .8s ease-in-out .5s;
+  transition: .8s ease-in-out .5s;
+}
+
+.app .landing i:hover {
+  -webkit-box-shadow: inset 0 0 0 5px #3891a6;
+          box-shadow: inset 0 0 0 5px #3891a6;
+  cursor: pointer;
+  -webkit-transition: .8s ease-in-out .5s;
+  transition: .8s ease-in-out .5s;
+}
+
+.app .landing .right-top {
+  background: #000000;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  height: 50vh;
+  grid-column: 2/-1;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  opacity: 0.5;
+  width: 50vw;
+}
+
+.app .landing .right-top.open {
+  -webkit-box-shadow: inset 0 0 0 5px #3891a6;
+          box-shadow: inset 0 0 0 5px #3891a6;
+  height: 0;
+  opacity: 0;
+  -webkit-transform: rotate(90deg) translate(100%, -100%);
+          transform: rotate(90deg) translate(100%, -100%);
+  visibility: hidden;
+  -webkit-transition: .8s ease-in-out .5s;
+  transition: .8s ease-in-out .5s;
+}
+
+.app .landing .right-bottom {
+  background: #000000;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  height: 50vh;
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+  opacity: 0.9;
+  width: 50vw;
+}
+
+.app .landing .right-bottom.open {
+  -webkit-box-shadow: inset 0 0 0 5px #3891a6;
+          box-shadow: inset 0 0 0 5px #3891a6;
+  height: 0;
+  opacity: 0;
+  -webkit-transform: rotate(-90deg) translate(100%, 100%);
+          transform: rotate(-90deg) translate(100%, 100%);
+  visibility: hidden;
+  -webkit-transition: .8s ease-in-out .5s;
+  transition: .8s ease-in-out .5s;
+}
+
 .app header {
   grid-column: 1 / -1;
   -ms-grid-row: 1;
